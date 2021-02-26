@@ -41,7 +41,7 @@ int main(int argc, char **argv){
            }
        }
     }
-     if(s.size!=0 ||C==1 ){
+     if(s.size>0 ||C==1 ){
        printf("the parentheses don't match successfull in %s \n",argv[i]);
        pop_all(&s);
        

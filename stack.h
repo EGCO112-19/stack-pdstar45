@@ -20,11 +20,12 @@ void push(StackPtr s, char value){
 char pop(StackPtr s){
   NodePtr t = s->top;
  char value;
- t= s->top;
- value=t->data;
-s->top=t->nextPtr;
- free(t);
- return value;
+ if(s->top != NULL){
+   t= s->top;
+   value=t->data;
+   s->top=t->nextPtr;
+   free(t);
+   return value;}
 }
 
 void pop_all(StackPtr s){
