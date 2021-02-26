@@ -46,8 +46,8 @@ int main(int argc, char **argv){
        pop_all(&s);
        
      }else
-       printf("the parentheses  match successfull in %s \n",argv[i]);
-       C = 0;
+       printf("}the parentheses  match successfull in %s \n",argv[i]);
+        C = 0;
    
 
   }
