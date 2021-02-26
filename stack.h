@@ -9,6 +9,6 @@ typedef struct {
 
 typedef Stack * StackPtr;
 void push(StackPtr s, char value);
-char pop(Stack s);
-void pop_all(Stack s);
+char pop(StackPtr s);
+void pop_all(StackPtr s);
 #endif
