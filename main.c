@@ -36,7 +36,7 @@ int main(int argc, char **argv){
          cut = pop(&s);
          s.size -= 1;
           if(cut!= '}')
-           {C=1;
+           {C=1; //แล้ว C จะกลับไปเป็น 0 ตอนไหนคะ 
             break;
            }
        }
@@ -47,6 +47,7 @@ int main(int argc, char **argv){
        
      }else
        printf("the parentheses  match successfull in %s \n",argv[i]);
+       C = 0;
    
 
   }
